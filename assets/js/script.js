@@ -1,3 +1,4 @@
+//Variables to allow interactive buttons within application
 var startBtn = document.querySelector("#startBtn");
 var quizPage = document.querySelector("#quizPage");
 var askQuestion = document.getElementById("askQuestion");
@@ -11,6 +12,7 @@ var scoreRec = document.getElementById('scoreRecord');
 var backBtn = document.getElementById('backBtn');
 var clearBtn = document.getElementById('clearBtn');
 
+//Text for the questions
 var questions = [
   {
     question: "Question 1: What coding language is considered the framework for the initial code?",
@@ -29,9 +31,10 @@ var questions = [
   }
 ];
 var questionNumber = 0;
-var sec = 60;
+var sec = 60;  //this variable sets the amount of time to answer the question
 var timer;
 
+//initiates the quiz if button is pressed
 function quizStart() {
   startPage.style.display = "none";
   quizPage.style.display = "block";
@@ -40,11 +43,13 @@ function quizStart() {
     document.getElementById('timer').innerHTML = +sec;
     sec--;
 
+    //initiates what happens if time runs out
     if (sec < 0) {
       gameOver()
     }
   }, 1000);
 };
+//function sets the choices for the answers.
 function showQuestion() {
   askQuestion.textContent = questions[questionNumber].question;
   answerBtn1.textContent = questions[questionNumber].choices[0];
@@ -60,6 +65,7 @@ function showQuestion() {
 
 };
 
+//checks if the answer is correct or wrong
 function checkAnswer(event) {
   if (questions[questionNumber].answer === event.target.value) {
     checkLine.textContent = "Correct!";
@@ -79,6 +85,7 @@ function checkAnswer(event) {
   }
 }
 
+//ends the quiz
 function gameOver() {
   clearInterval(timer);
   quizPage.style.display = "none";

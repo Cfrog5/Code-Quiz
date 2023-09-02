@@ -2,24 +2,26 @@
     font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     box-sizing: border-box;
   }
-  
+  /*Effects the header position*/
   .header{
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   
+  /*Adjust background*/
   body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: rgb(1, 12, 59);
   }
-  
+  /*allows for a list for the questions*/
   ul {
     list-style-type: none;
   }
   
+  /*effects the quiz page after starting quiz*/
   .quizPage {
     display: flex;
     flex-direction: column;
