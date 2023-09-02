@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  <title>Coding Quiz!</title>
+</head>
+<body>
+  <header>
+      <div class="header">
+      <div>
+        <button class="highButton" id="scoreCheck">View Highscores!</button>
+      </div>
+      <div>
+        <p id="timer">Time Left: 60 s</p>
+      </div>
+  </header>
+
+  <main>
+    <div>
+      <section class="startPage" id="startPage">
+        <div id="intro">
+          <h1>Welcome to the Coding Quiz Challenge!</h1>
+          <p id="directions">
+            Answer the following questions about coding within the time limit.
+          </p>
+          <button class="button" id="startBtn">Start!</button>
+        </div>
+      </section>
+      <section class="quizPage" id="quizPage">
+        <div>
+          <h2 id="askQuestion">Ask the question</h2>
+          <ul>
+            <li><button class="choiceButton" id="answerBtn1" >Answer 1</button></li>
+            <li><button class="choiceButton" id="answerBtn2">Answer 2</button></li>
+            <li><button class="choiceButton" id="answerBtn3" >Answer 3</button></li>
+            <li><button class="choiceButton" id="answerBtn4">Answer 4</button></li>
+          </ul>
+        </div>
+        <div class="checkLine">
+          <p>Correct or Wrong</p>
+        
+        </div>
+      </section>
+
+      <section class="submitPage" id="submitPage">
+        <div>
+          <h2 id="finish">Finished!</h2>
+          <p id="finalScore">Your final score is:</p>
+          <p>Enter Initials
+            <input id="initial">
+            <button class="submitButton" id="button">Submit!</button>
+          </p>
+        </div>
+      </section>
+
+      <section class="highscorePage" id="highscorePage">
+        <div>
+          <h2>High Scores</h2>
+          <div id="scoreRecord"><p>Your record</p></div>
+          <div>
+            <button class="button" id="backBtn">Go Back</button>
+   
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  
+</body>
+<script src="./assets/js/script.js"></script>
+</html>

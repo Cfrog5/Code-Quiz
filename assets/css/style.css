@@ -1,0 +1,38 @@
+* {
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    box-sizing: border-box;
+  }
+  
+  .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(1, 12, 59);
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  .quizPage {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .quizPage, .submitPage, .highscorePage {
+    display: none;
+  }
+  
+  main {
+    text-align: center;
+    justify-content: center;
+    flex: 1 0 auto;
+  }
